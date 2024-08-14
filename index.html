@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors Lizard Spock</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+  <h1>Rock Paper Scissors Lizard Spock</h1>
+  <div data-rps-options class="game-options">
+    <button data-rps-choice="rock">Rock <i class="fas fa-hand-rock"></i></button>
+    <button data-rps-choice="paper">Paper <i class="fas fa-hand-paper"></i></button>
+    <button data-rps-choice="scissors">Scissors <i class="fas fa-hand-scissors"></i></button>
+    <button data-rps-choice="lizard">Lizard <i class="fas fa-hand-lizard"></i></button>
+    <button data-rps-choice="spock">Spock <i class="fas fa-hand-spock"></i></button>
+  </div>
+  <section>
+    <h2>Game Outcome</h2>
+    <p data-rps-result>
+      Choose an option to start playing!
+    </p>
+    <p data-rps-flavor></p>
+  </section>
+  <section>
+    <h2>Totals</h2>
+    <p>Computer Wins: <span data-rps-wins="computer">0</span></p>
+    <p>Player Wins: <span data-rps-wins="player">0</span></p>
+  </section>
+  <section>
+    <h2>Game Log</h2>
+    <ul data-rps-log class="game-log"></ul>
+  </section>
+</body>
+
+</html>
